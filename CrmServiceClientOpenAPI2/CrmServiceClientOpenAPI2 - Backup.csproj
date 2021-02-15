@@ -2,15 +2,14 @@
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
     <AzureFunctionsVersion>v1</AzureFunctionsVersion>
-    <AssemblyName>ss.CrmServiceClientOpenAPI</AssemblyName>
-    <RootNamespace>ss.CrmServiceClientOpenAPI</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Aliencube.AzureFunctions.Extensions.OpenApi.Core" Version="3.1.1" />
     <PackageReference Include="libphonenumber-csharp" Version="8.12.18" />
     <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.2.1" />
-    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.21" />
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.27" />
     <PackageReference Include="Microsoft.CrmSdk.XrmTooling.CoreAssembly" Version="9.1.0.21" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.21" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -23,6 +22,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OpenAPI\" />
   </ItemGroup>
   <Import Project="..\EntityModel\EntityModel.projitems" Label="Shared" />
 </Project>
