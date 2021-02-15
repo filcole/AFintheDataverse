@@ -446,7 +446,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Actions\_SaveServiceTreeDataResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Actions\_ServiceCalendarActionRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Actions\_ServiceCalendarActionResponse.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Entities\Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Contacts.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entities\XrmServiceContext.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OptionSets\Contact_AccountRoleCode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OptionSets\Contact_Address1_AddressTypeCode.cs" />

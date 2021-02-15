@@ -1,11 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <AzureFunctionsVersion>v1</AzureFunctionsVersion>
+    <AssemblyName>ss.CrmServiceClientOpenAPI</AssemblyName>
+    <RootNamespace>ss.CrmServiceClientOpenAPI</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="libphonenumber-csharp" Version="8.12.18" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
+    <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.2.1" />
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.21" />
+    <PackageReference Include="Microsoft.CrmSdk.XrmTooling.CoreAssembly" Version="9.1.0.21" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.21" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

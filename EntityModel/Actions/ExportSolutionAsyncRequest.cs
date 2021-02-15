@@ -302,25 +302,6 @@ namespace ebecs.PGC.CEEntityModel
 			}
 		}
 		
-		public Microsoft.Xrm.Sdk.ExportComponentsParams ExportComponentsParams
-		{
-			get
-			{
-				if (this.Parameters.Contains("ExportComponentsParams"))
-				{
-					return ((Microsoft.Xrm.Sdk.ExportComponentsParams)(this.Parameters["ExportComponentsParams"]));
-				}
-				else
-				{
-					return default(Microsoft.Xrm.Sdk.ExportComponentsParams);
-				}
-			}
-			set
-			{
-				this.Parameters["ExportComponentsParams"] = value;
-			}
-		}
-		
 		public ExportSolutionAsyncRequest()
 		{
 			this.RequestName = "ExportSolutionAsync";
