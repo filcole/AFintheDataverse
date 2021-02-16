@@ -55,19 +55,13 @@ namespace ss.SimpleODataClientTest
             var client = new ODataClient(settings);
 
             // Get fullname of contacts with firstname = Robert
-            var contacts = await client
-                .FindEntriesAsync("contacts?$select=contactid,fullname&$filter=firstname like 'Robert'");
-
-            var numContacts = 0;
+            var contacts = await client.FindEntriesAsync("contacts?$select=contactid,fullname&$filter=firstname like 'Robert'");
             foreach (var contact in contacts)
             {
                 log.LogInformation("Id=" + contact["contactid"] + "  Fullname=" + contact["fullname"]);
-                numContacts++;
             }
 
-            string responseMessage = $"Found {numContacts} contacts";
-
-            return new OkObjectResult(responseMessage);
+            return new OkObjectResult("Found some contacts");
         }
     }
 }
